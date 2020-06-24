@@ -16,7 +16,7 @@ The University of Alabama
 This project was developed using MATLAB 9.7.0.1190202 (R2019b) and MSC NASTRAN/PATRAN/Flightloads x64 2019.0. 
 
 ## The repository includes the following functions:
-- **Main() - calls all other functions
+- **Main() - calls all other functions **
 - **ALM_GA_Func() - a custom augmented lagrangian genetic algorithm for constraint-based numerical optimization
 - LaGrangianFunction() - Lagrangian function which gets updated through augmented Lagrangian multiplier method and gets optimized by Simple_GA_Func()
 - Simple_GA_Func() - searches for optimum using Crossover and Mutation 
