@@ -1,0 +1,7 @@
+ga_group_create( "Spar" )
+ga_group_create( "Ribs" )
+ga_group_create( "Bot_Surf" )
+ga_group_create( "Top_Surf" )
+ga_group_current_set( "Top_Surf" )
+sys_poll_option( 0 )
+

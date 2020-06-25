@@ -1,0 +1,1300 @@
+$# Session file patran.ses.23 started recording at 29-May-20 03:25:38
+$# Build: 25.0.638960 Wed Mar 13 04:42:59 PDT 2019
+$# Recorded by: Patran 2019
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: 27500@coe-lic-msc.ua.edu
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 29-May-20 03:25:39.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\MSC.Software\Patran_x64\20190\loads_browser.dll
+$# ÀîŸ›û shared library 'Loads Browser', Version 2019, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+$#  
+$# Loading Flightloads ...
+$#  
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 29-May-20 03:25:40.
+$# Loading dynamic library C:\MSC.Software\Patran_x64\20190\bin\exe\aero.dll
+$# MSC.FlightLoads shared library 'AERO' Version 2019 Revision 3 Patch 0, has 
+$# been loaded for MSC.Patran.
+$# MSC Nastran command used in Flightloads is:
+$#   
+$# c:/msc.software/patran_x64/20190/mscnastran_files/20190/servermode/bin/nast
+$# ran.exe
+$# 
+$# The MSC Nastran Server (I8) initialized successfully
+$# The scratch directory for Flightloads is c:/users/localb~1/appdata/local/temp
+$#  
+$# Flightloads Successfully Loaded
+$#  
+uil_file_open.go( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptF" // @
+"ramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51.51." // @
+"50.010.010.01.db" )
+$# Database version 3.20 created by Patran 2019 successfully opened.
+$# Appending to existing journal file C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01.db.jou at 29-May-20 03:26:25
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFr" // @
+"amework\WingModel\newwing032206-51.51.50.010.010.01" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_viewport_location_set( "default_viewport", 0.000000, 0.000000, 1 )
+ga_view_aa_set( -82.820923, 4.110482, 5.597864 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+uil_pref_analysis.set_analysis_preference( "MSC.Nastran", "Aeroelasticity",  @
+".bdf", ".op2", "No Mapping" )
+$#  Loading... msc_nastran_defn_dflt_tbs( MSC.Nastran, Aeroelasticity )
+ga_view_center_set( 0.183561, 0.236817 )
+ga_view_zoom_set( 1.837500 )
+ga_view_center_set( 0.042774, 0.275483 )
+ga_view_zoom_set( 2.526562 )
+ga_view_center_set( 0.247014, 0.373638 )
+ga_view_zoom_set( 1.837500 )
+ga_view_center_set( 0.395552, 0.445022 )
+ga_view_zoom_set( 1.336363 )
+ga_view_aa_set( -81.011803, 5.374896, 77.432571 )
+ga_view_center_set( 1.035853, 0.281342 )
+ga_view_zoom_set( 1.837500 )
+ga_view_center_set( 1.946010, 0.143529 )
+ga_view_zoom_set( 2.526562 )
+ga_view_center_set( 1.888754, 0.183064 )
+ga_view_zoom_set( 3.474023 )
+ga_view_center_set( 1.798778, 0.244921 )
+ga_view_zoom_set( 4.776782 )
+ga_view_center_set( 1.675062, 0.329975 )
+ga_view_zoom_set( 6.568075 )
+ga_view_center_set( -0.283762, 0.714008 )
+ga_view_zoom_set( 4.776782 )
+ga_view_center_set( -1.723356, 1.000803 )
+ga_view_zoom_set( 3.474023 )
+ga_view_center_set( -2.773061, 1.214833 )
+ga_view_zoom_set( 2.526562 )
+ga_view_center_set( -1.833160, 0.878729 )
+ga_view_zoom_set( 1.837500 )
+mscnastran_attachment.create( 27, ["FldsXdbAttach", "Attach XDB", "RES",  @
+"RUN_TRANS", "Result Entities", "Structural",  @
+"C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel" // @
+"\newwing032206-51.51.50.010.010.01\newwing032206-51.51.50.010.010.01.db", "", @
+ "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingMode" // @
+"l\newwing032206-51.51.50.010.010.01\newwing032206-51.51.50.010.010.01-ful" // @
+"lmodel.xdb", "", "NODAL", "Nodal       ", "", "1.0E-8", "1.0E-4",  @
+"0.0049999999", "", "", "", "ON", "OFF", "OFF", "", "", "", "", ""] )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1 AEROSG2DDEFAULT
+$# Processing result load case: SC1 StructureDEFAULT
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1 AEROSG2DDEFAULT",  @
+"A1:Static Subcase", "Aeroelastic Restrained Forces",  @
+"Elemental Elastic Component", "(NON-LAYERED)", "MAG", "Default",  @
+"DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 AEROSG2DDEFAULT",  @
+"A1:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -72.054085, 3.308398, 64.540817 )
+ga_view_center_set( -1.872818, 0.855926 )
+ga_view_zoom_set( 2.526562 )
+ga_view_center_set( -1.833160, 0.878729 )
+ga_view_zoom_set( 1.837500 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1 StructureDEFAULT",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "Default",  @
+"DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 StructureDEFAULT",  @
+"A1:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -78.741997, -0.224947, 48.922817 )
+ga_view_center_set( -2.291213, 1.121636 )
+ga_view_zoom_set( 2.526562 )
+ga_view_center_set( -3.250943, 1.450180 )
+ga_view_zoom_set( 3.474023 )
+ga_view_center_set( -2.083999, 1.056200 )
+ga_view_zoom_set( 2.526562 )
+ga_view_center_set( -1.229363, 0.759754 )
+ga_view_zoom_set( 1.837500 )
+ga_view_center_set( -0.248105, 0.409628 )
+ga_view_zoom_set( 1.050000 )
+ga_view_center_set( 0.048560, 0.284782 )
+ga_view_zoom_set( 0.763636 )
+ga_view_center_set( 0.264315, 0.193985 )
+ga_view_zoom_set( 0.555372 )
+ga_view_center_set( 0.420793, 0.127950 )
+ga_view_zoom_set( 0.403907 )
+ga_view_center_set( 0.412868, 0.126524 )
+ga_view_zoom_set( 0.293750 )
+ga_view_center_set( 0.407104, 0.125486 )
+ga_view_zoom_set( 0.213637 )
+ga_view_center_set( 0.412868, 0.126524 )
+ga_view_zoom_set( 0.293750 )
+ga_view_center_set( 0.420793, 0.127950 )
+ga_view_zoom_set( 0.403907 )
+ga_view_center_set( 0.401615, 0.139937 )
+ga_view_zoom_set( 0.555372 )
+ga_view_center_set( 0.361515, 0.141026 )
+ga_view_zoom_set( 0.403907 )
+ga_view_center_set( 0.331717, 0.141819 )
+ga_view_zoom_set( 0.293750 )
+ga_view_center_set( 0.309585, 0.142165 )
+ga_view_zoom_set( 0.213637 )
+ga_view_center_set( 0.293489, 0.142416 )
+ga_view_zoom_set( 0.155372 )
+ga_view_center_set( 0.309585, 0.142165 )
+ga_view_zoom_set( 0.213637 )
+ga_view_center_set( 0.331717, 0.141819 )
+ga_view_zoom_set( 0.293750 )
+ga_view_center_set( 0.362149, 0.141343 )
+ga_view_zoom_set( 0.403907 )
+ga_view_center_set( 0.403992, 0.140690 )
+ga_view_zoom_set( 0.555372 )
+ga_view_center_set( 0.376424, 0.157770 )
+ga_view_zoom_set( 0.763636 )
+ga_view_center_set( 0.433359, 0.140690 )
+ga_view_zoom_set( 0.555372 )
+ga_view_center_set( 0.474767, 0.128267 )
+ga_view_zoom_set( 0.403907 )
+ga_view_center_set( 0.533225, 0.110730 )
+ga_view_zoom_set( 0.190074 )
+ga_view_center_set( 0.578723, 0.119307 )
+ga_view_zoom_set( 0.138235 )
+ga_view_center_set( 0.611813, 0.125546 )
+ga_view_zoom_set( 0.100535 )
+ga_view_center_set( 0.578181, 0.120067 )
+ga_view_zoom_set( 0.138235 )
+ga_view_center_set( 0.531191, 0.114473 )
+ga_view_zoom_set( 0.190074 )
+ga_view_center_set( 0.465759, 0.108217 )
+ga_view_zoom_set( 0.261351 )
+ga_view_center_set( 0.375226, 0.102435 )
+ga_view_zoom_set( 0.359358 )
+ga_view_center_set( 0.250744, 0.096036 )
+ga_view_zoom_set( 0.494118 )
+ga_view_center_set( 0.079047, 0.090438 )
+ga_view_zoom_set( 0.679412 )
+ga_view_center_set( -0.157037, 0.084939 )
+ga_view_zoom_set( 0.934191 )
+ga_view_center_set( -0.454432, 0.111654 )
+ga_view_zoom_set( 1.284513 )
+ga_view_center_set( -0.879984, 0.156704 )
+ga_view_zoom_set( 1.766205 )
+ga_view_center_set( -1.402569, 0.139377 )
+ga_view_zoom_set( 1.284513 )
+ga_view_aa_set( -95.761879, 15.553847, 163.715485 )
+ga_view_aa_set( -81.517906, 14.672523, 28.382942 )
+ga_view_center_set( -1.125336, 0.238488 )
+ga_view_zoom_set( 1.766205 )
+ga_view_aa_set( -88.722603, 12.141284, 34.602497 )
+res_dra_detach_file( 1, 130, 26 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 27 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+ga_view_aa_set( -79.042336, 1.814207, 42.595634 )
+display_cleanup(  )
+repaint_graphics(  )
+res_dra_detach_file( 1, 130, 28 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 29 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+ga_view_center_set( -1.639951, 0.401449 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -2.297752, 0.675314 )
+ga_view_zoom_set( 3.339231 )
+ga_view_center_set( -1.684503, 0.456484 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -1.244223, 0.322113 )
+ga_view_zoom_set( 1.766205 )
+ga_view_center_set( -2.425929, 0.597527 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -4.045532, 1.015531 )
+ga_view_zoom_set( 3.339231 )
+ga_view_center_set( -2.916002, 0.922496 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -2.098338, 0.852928 )
+ga_view_zoom_set( 1.766205 )
+ga_view_center_set( -1.694271, 0.770018 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -1.137726, 0.715698 )
+ga_view_zoom_set( 1.766205 )
+ga_view_aa_set( -74.414383, 3.805418, 50.349518 )
+ga_view_center_set( -1.528451, 1.078786 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -1.154880, 0.940603 )
+ga_view_zoom_set( 1.766205 )
+flat_plate_surf_create( "Flatplate2", [0., 0., 0.], [0., 0., 0.], 0., 0.,  @
+102001, 1, 0, "None", 0, ["empty"], 6, 6, [0., 0.2, 0.40000001, 0.60000002,  @
+0.80000001, 1.], [0., 0.2, 0.40000001, 0.60000002, 0.80000001, 1.], FALSE,  @
+"Surface 29:52 71:139", 0, TRUE )
+$# Error reported from application APP INTERFACES
+$#     Two edges need to be parallel to the X axis of the Aero Coordinate 
+$# System.
+$? NO 6026007 
+flds_store_start_elem_id( 102001 )
+flat_plate_surf_create( "FlatPlate2", [0., 0., 0.], [0., 0., 0.], 0., 0.,  @
+102001, 1, 0, "None", 0, ["empty"], 6, 6, [0., 0.2, 0.40000001, 0.60000002,  @
+0.80000001, 1.], [0., 0.2, 0.40000001, 0.60000002, 0.80000001, 1.], FALSE,  @
+"Surface 138:139", 0, TRUE )
+$# 1 Surface Created: Surface 140
+$# Group "FlatPlate2" created.
+$# Property Set "FlatPlate2" created.
+$# 1 Surface Deleted: Surface 140
+flds_store_start_elem_id( 103001 )
+ga_view_aa_set( -88.980392, 1.144090, 39.691395 )
+ga_view_center_set( -1.812441, 1.236982 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -1.154880, 0.940603 )
+ga_view_zoom_set( 1.766205 )
+ga_view_center_set( -0.676653, 0.725054 )
+ga_view_zoom_set( 1.284513 )
+ga_view_aa_set( -82.046478, 1.439541, 42.676247 )
+ga_view_center_set( -1.322605, 1.052882 )
+ga_view_zoom_set( 1.766205 )
+$# Acknowledgement requested from application APP INTERFACES
+$#     The Spline name is blank.
+$? NO 20039 
+$# Acknowledgement requested from application APP INTERFACES
+$#     The Spline Name [ TPSpline2 ] must be of the form "NAME_ID". The value 
+$#  of ID becomes the SID on the bulk data entry.
+$? NO 20039 
+flds_spline_create( "TPSpline_2", "Thin Plate", ["General", "Rigid Attach"],  @
+"", ["default_group"], "", ["FlatPlate2"] )
+flds_spline_delete( ["TPSpline_1"] )
+$# Field "STRUCT_MODEL_-1" deleted.
+fields_create_general( "STRUCT_MODEL_-1", 2, 5, 2, "Real", "Coord 0", "", 0,  @
+0, 0, 0 )
+fields_create_general_term( "STRUCT_MODEL_-1", 0, 0, 0, 250,  @
+"TRUE**FALSE*Lumped*1.*TRUE**FALSE*TRUE*20.*TRUE*1.*TRUE" )
+res_dra_detach_file( 1, 130, 30 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 31 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 32 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 33 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+mscnastran_subcase.create( "144", "5_AoA", "" )
+$# Question from application APP INTERFACES
+$#     Subcase "5_AoA" already exists.  Do you wish to delete the existing 
+$# subcase and create a new one?
+$? YES 6022070 
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "AERO SUBCASE METHOD NAME",  @
+"Flexible Trim" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",  @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",  @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC FORCES", "1" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC FORCES 1", "AEROF=0" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC PRESSURES", "1" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC PRESSURES 1", "APRES=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "AERO BOUNDARY SYMMETRY FLAG",  @
+"Asymmetric" )
+mscnastran_subcase.create_char_param( "AERO GROUND SYMMETRY FLAG",  @
+"Asymmetric" )
+mscnastran_subcase.create_real_param( "AERO MACH NUMBER", 0.184118 )
+mscnastran_subcase.create_real_param( "AERO DYNAMIC PRESSURE", 2402. )
+mscnastran_subcase.create_real_param( "AERO VELOCITY", 0. )
+mscnastran_subcase.create_char_param( "AERO AIC FLAG", "TRUE" )
+mscnastran_subcase.create_int_param( "AERO RB MOTION 0", 11 )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 1", "ANGLEA" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 2", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 3", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 4", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 5", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 6", "URDD1" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 7", "URDD2" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 8", "URDD3" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 9", "URDD4" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 10", "URDD5" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 11", "URDD6" )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",  @
+"AERO USE ARRAY", 1, 11, [-1., -2., -2., -2., -2., -2., -2., -2., -2., -2.,  @
+-2.] )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",  @
+"AERO ARRAY OF FIXED VALUES", 1, 11, [0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,  @
+0.] )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",  @
+"AERO LINK FACTOR MATRIX", 11, 11, [[0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,  @
+0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0.,  @
+0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0.,  @
+0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0.,  @
+0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0.,  @
+0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0.,  @
+0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]] )
+mscnastran_subcase.create_int_param( "AERO NUMBER OF RESTRAINED NODES", 0 )
+$# UNDO: Aero Subcase creation
+$#  Beginning analysis of  newwin
+jobfile.open( "newwin", "ANALYZE NO JOBFILE" )
+msc_delete_old_files( "newwin", ".bdf", ".op2" )
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["29-May-20" @
+, "03:37:33"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\localbenabbou\Box Sync\Research - MD" // @
+"O\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032" // @
+"206-51.51.50.0" )
+jobfile.writec( "JOBNAME", "newwin" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran Aeroelastic job created on " // @
+"29-May-20 at 03:27:10" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "AERO OBJECT", "AeroSG2D" )
+jobfile.writei( "REUSE AERO DATA 0", 0 )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".op2" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\localbenabbou" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\help" // @
+"files" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\alters" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icon" // @
+"s\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin\exe" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\msce" // @
+"xplore_files\" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\flds" // @
+"_icons" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT+HDF5" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2019." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "STATIC AEROELASTIC RESPONSE" )
+jobfile.writei( "SOLUTION SEQUENCE", 144 )
+jobfile.writec( "DATABASE RUN", "" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "20." )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "999999" )
+jobfile.writec( "MAXIMUM RUN TIME", "600" )
+jobfile.writec( "WT-MASS CONVERSION", "1." )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "AERO UNIT SCALE FACTOR", "1." )
+jobfile.writec( "AERO STEADY REF CHORD", "1.500000" )
+jobfile.writec( "AERO STEADY REF SPAN", "5.000000." )
+jobfile.writec( "AERO STEADY REF AREA", "7.500000" )
+jobfile.writec( "AERO STEADY RIGID COORD", "0" )
+jobfile.writei( "AERO DENSITY UNIT", 3 )
+jobfile.writec( "AERO REFERENCE DENSITY", "1.226" )
+jobfile.writei( "AERO BASIC COORD", 0 )
+jobfile.writec( "AERO FULL/HALF MODEL", "Full Model" )
+jobfile.writei( "AERO CONTROL DEVICE 0", 0 )
+jobfile.writei( "AERO SPLINE 0", 1 )
+jobfile.writec( "AERO SPLINE 1", "TPSpline_2" )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "144", "newwin", 1, ["5_AoA"] )
+analysis_submit_2( "MSC.Nastran", "newwin" )
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 29-May-20 03:37:34.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\localbenabbou\Box\ Sync\Research\ -\ 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01.db.
+$# Messages output from the Patran 2019 input deck translator on May       29,
+$#  2020 at 03:37:34.
+$# 
+$# The NASTRAN input file, newwin.bdf, has been successfully opened.
+$# 
+$# Translating 648 elements from the element property region Panel_1.
+$# 
+$# Translating 648 elements from the element property region Panel_2.
+$# 
+$# Translating 432 elements from the element property region Panel_3.
+$# 
+$# Translating 810 elements from the element property region Ribs.
+$# 
+$# Translating 288 elements from the element property region Spar_1.
+$# 
+$# Translating 288 elements from the element property region Spar_2.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 1 multipoint constraints from the entire model.
+$# 
+$# Translating 2822 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : Fixed_Root.
+$# Writing interface element lbcs.
+$# 
+$# Translating gravity loading in load set : Gravity.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.422012
+$# 
+$# End of NASTRAN input file translation.
+$# Patran Nastran Preference Patran 2019 has released 1 license(s) to FLEXlm 
+$# at 29-May-20 03:37:34.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c 
+$# C:\MSC.Software\Patran_x64\20190\bin\MscNastranExecute.exe 
+$# -j newwin -m bdf -x 2019 -v
+$# UNDO: Aero Job creation
+res_dra_detach_file( 1, 130, 34 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+mscnastran_attachment.create( 27, ["FldsXdbAttach", "Attach XDB", "RES",  @
+"RUN_TRANS", "Result Entities", "Structural",  @
+"C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel" // @
+"\newwing032206-51.51.50.010.010.01\newwing032206-51.51.50.010.010.01.db", "", @
+ "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingMode" // @
+"l\newwing032206-51.51.50.010.010.01\newwin.xdb", "", "NODAL", "Nodal       ", @
+ "", "1.0E-8", "1.0E-4", "0.0049999999", "", "", "", "ON", "OFF", "OFF", "",  @
+"", "", "", ""] )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 36 )
+res_dra_detach_file( 2, 130, 37 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb", "NONE",  @
+"", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 38 )
+res_dra_detach_file( 2, 130, 39 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb", "NONE",  @
+"", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_display_tool_unpost( "Fringe", "default_Fringe" )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 AEROSG2DDEFAULT",  @
+"A2:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -71.726028, -1.523435, 17.913725 )
+res_display_tool_unpost( "Fringe", "default_Fringe" )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 AEROSG2DDEFAULT",  @
+"A1:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -79.640488, 2.136224, 51.713905 )
+res_display_tool_unpost( "Fringe", "default_Fringe" )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 AEROSG2DDEFAULT",  @
+"A2:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -79.060951, 0.490933, 33.885563 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1 StructureDEFAULT",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "Default",  @
+"DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 StructureDEFAULT",  @
+"A1:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -83.278412, 9.719211, 48.993576 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1 StructureDEFAULT",  @
+"A2:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "Default",  @
+"DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1 StructureDEFAULT",  @
+"A2:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -74.605553, -15.682703, 45.022675 )
+ga_view_center_set( -1.444587, 1.379757 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -1.431483, 1.776796 )
+ga_view_zoom_set( 3.339231 )
+ga_view_center_set( -1.719760, 1.468862 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -1.935135, 1.244910 )
+ga_view_zoom_set( 1.766205 )
+ga_view_center_set( -2.095930, 1.082035 )
+ga_view_zoom_set( 1.284513 )
+ga_view_aa_set( -67.576958, -4.178402, 78.656898 )
+ga_view_center_set( -2.076524, 1.311446 )
+ga_view_zoom_set( 1.766205 )
+ga_view_center_set( -2.183258, 1.613543 )
+ga_view_zoom_set( 2.428532 )
+ga_view_center_set( -2.345743, 2.018444 )
+ga_view_zoom_set( 3.339231 )
+ga_view_aa_set( -77.203979, 18.646738, 149.131699 )
+ga_view_center_set( -2.154759, 2.802202 )
+ga_view_zoom_set( 4.591443 )
+ga_view_center_set( -1.892155, 3.874915 )
+ga_view_zoom_set( 6.313233 )
+ga_view_center_set( -2.154760, 2.807157 )
+ga_view_zoom_set( 4.591443 )
+ga_view_center_set( -2.345745, 2.030606 )
+ga_view_zoom_set( 3.339231 )
+ga_view_center_set( -2.564014, 1.147237 )
+ga_view_zoom_set( 1.908132 )
+ga_view_center_set( -2.655364, 0.909875 )
+ga_view_zoom_set( 1.387732 )
+ga_view_center_set( -2.722891, 0.737248 )
+ga_view_zoom_set( 1.009260 )
+ga_view_center_set( -2.772793, 0.611701 )
+ga_view_zoom_set( 0.734007 )
+ga_view_aa_set( -91.793991, 12.951158, 113.387756 )
+ga_view_center_set( -2.666651, 0.716654 )
+ga_view_zoom_set( 1.009260 )
+ga_view_center_set( -2.520709, 0.860963 )
+ga_view_zoom_set( 1.387732 )
+ga_view_center_set( -2.332017, 1.057891 )
+ga_view_zoom_set( 1.908132 )
+ga_view_center_set( -2.066387, 1.334845 )
+ga_view_zoom_set( 2.623682 )
+ga_view_aa_set( -77.055534, 14.980958, 171.684616 )
+ga_view_center_set( -1.808738, 1.738307 )
+ga_view_zoom_set( 3.607562 )
+ga_view_aa_set( -93.312721, 6.049357, 43.021267 )
+ga_view_center_set( -1.497294, 2.444896 )
+ga_view_zoom_set( 4.960398 )
+ga_view_center_set( -1.808737, 1.738307 )
+ga_view_zoom_set( 3.607562 )
+ga_view_center_set( -2.035241, 1.224424 )
+ga_view_zoom_set( 2.623682 )
+ga_view_center_set( -2.199972, 0.850691 )
+ga_view_zoom_set( 1.908132 )
+ga_view_center_set( -2.315284, 0.599851 )
+ga_view_zoom_set( 1.387732 )
+ga_view_center_set( -2.399146, 0.418511 )
+ga_view_zoom_set( 1.009260 )
+ga_view_center_set( -2.456969, 0.288211 )
+ga_view_zoom_set( 0.734007 )
+ga_view_aa_set( -94.700188, 3.957723, 70.046066 )
+ga_view_center_set( -2.441127, 0.420887 )
+ga_view_zoom_set( 1.009260 )
+ga_view_center_set( -2.436770, 0.606584 )
+ga_view_zoom_set( 1.387732 )
+ga_view_aa_set( -69.504410, -9.631967, 60.212498 )
+ga_view_center_set( -2.529619, 0.722644 )
+ga_view_zoom_set( 1.908132 )
+ga_view_center_set( -2.719809, 0.608081 )
+ga_view_zoom_set( 1.387732 )
+ga_view_center_set( -2.877733, 0.524763 )
+ga_view_zoom_set( 1.009260 )
+ga_view_center_set( -3.042489, 0.498228 )
+ga_view_zoom_set( 0.734007 )
+ga_view_aa_set( -59.775867, -0.839815, 78.258865 )
+ga_view_center_set( -2.908624, 0.535060 )
+ga_view_zoom_set( 1.009260 )
+ga_view_center_set( -2.726739, 0.587883 )
+ga_view_zoom_set( 1.387732 )
+ga_view_aa_set( -32.247932, 36.651375, 114.096939 )
+ga_view_aa_set( -94.456100, -0.035399, 142.642883 )
+display_cleanup(  )
+repaint_graphics(  )
+res_dra_detach_file( 1, 130, 40 )
+res_dra_detach_file( 2, 130, 41 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb", "NONE",  @
+"", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+flds_delete_element( "FlatPlate", FALSE )
+$# 25 elements deleted. IDs = Element 101001:101025
+$# 36 nodes deleted. IDs = Node 101001:101036
+$# 1 Property Sets deleted.
+res_dra_detach_file( 1, 130, 42 )
+res_dra_detach_file( 2, 130, 43 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb", "NONE",  @
+"", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 44 )
+res_dra_detach_file( 2, 130, 45 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb", "NONE",  @
+"", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+res_dra_detach_file( 1, 130, 46 )
+res_dra_detach_file( 2, 130, 47 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb", "NONE",  @
+"", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3467 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+mscnastran_attachment.detach_xdb( 1, ["A2:C:\Users\localbenabbou\Box Sync\" // @
+"Research - MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010." // @
+"01\newwin.xdb"] )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\localbenabbou\Box Sync\Research - 
+$# MDO\Wi
+$# ngOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwin.xdb
+res_dra_detach_file( 1, 130, 48 )
+flds_attach_xdb_new( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingO" // @
+"ptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032206-51." // @
+"51.50.010.010.01-fullmodel.xdb", "NONE", "", " ", " ", " ", " " )
+$# Attaching Direct Results Access file: "C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01-fullmodel.xdb"
+$# XDB file created by "MSC.NASTRAN V2019" on 5/29/2020 using "VENDOR:INTEL   
+$#              MODEL:XEON/3433 (HAR-210-0 OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+$#  Beginning analysis of  newwin
+jobfile.open( "newwin", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (newwin) is already defined in the database. Do you wish 
+$# to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "newwin", ".bdf", ".op2" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "newwin".  These files are newwin.xdb, newwin.f04, newwin.f06, newwin.log, 
+$# newwin.h5, newwin.bdf.  Will you permit deletion of these files?
+$? YES 6022037 
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["29-May-20" @
+, "03:41:04"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\localbenabbou\Box Sync\Research - MD" // @
+"O\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032" // @
+"206-51.51.50.0" )
+jobfile.writec( "JOBNAME", "newwin" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran Aeroelastic job created on " // @
+"29-May-20 at 03:27:10" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "AERO OBJECT", "AeroSG2D" )
+jobfile.writei( "REUSE AERO DATA 0", 0 )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".op2" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\msce" // @
+"xplore_files\" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin\exe" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icon" // @
+"s\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\alters" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\help" // @
+"files" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\flds" // @
+"_icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Users\localbenabbou" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT+HDF5" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2019." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "STATIC AEROELASTIC RESPONSE" )
+jobfile.writei( "SOLUTION SEQUENCE", 144 )
+jobfile.writec( "DATABASE RUN", "" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "20." )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "999999" )
+jobfile.writec( "MAXIMUM RUN TIME", "600" )
+jobfile.writec( "WT-MASS CONVERSION", "1." )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "AERO UNIT SCALE FACTOR", "1." )
+jobfile.writec( "AERO STEADY REF CHORD", "1.500000" )
+jobfile.writec( "AERO STEADY REF SPAN", "5.000000." )
+jobfile.writec( "AERO STEADY REF AREA", "7.500000" )
+jobfile.writec( "AERO STEADY RIGID COORD", "0" )
+jobfile.writei( "AERO DENSITY UNIT", 3 )
+jobfile.writec( "AERO REFERENCE DENSITY", "1.226" )
+jobfile.writei( "AERO BASIC COORD", 0 )
+jobfile.writec( "AERO FULL/HALF MODEL", "Full Model" )
+jobfile.writei( "AERO CONTROL DEVICE 0", 0 )
+jobfile.writei( "AERO SPLINE 0", 1 )
+jobfile.writec( "AERO SPLINE 1", "TPSpline_2" )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "144", "newwin", 1, ["5_AoA"] )
+analysis_submit_2( "MSC.Nastran", "newwin" )
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 29-May-20 03:41:05.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\localbenabbou\Box\ Sync\Research\ -\ 
+$# MDO\WingOptFramework\WingModel\newwing032206-51.51.50.010.010.01\newwing032
+$# 206-51.51.50.010.010.01.db.
+$# Messages output from the Patran 2019 input deck translator on May       29,
+$#  2020 at 03:41:05.
+$# 
+$# The NASTRAN input file, newwin.bdf, has been successfully opened.
+$# 
+$# Translating 648 elements from the element property region Panel_1.
+$# 
+$# Translating 648 elements from the element property region Panel_2.
+$# 
+$# Translating 432 elements from the element property region Panel_3.
+$# 
+$# Translating 810 elements from the element property region Ribs.
+$# 
+$# Translating 288 elements from the element property region Spar_1.
+$# 
+$# Translating 288 elements from the element property region Spar_2.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 1 multipoint constraints from the entire model.
+$# 
+$# Translating 2822 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : Fixed_Root.
+$# Writing interface element lbcs.
+$# 
+$# Translating gravity loading in load set : Gravity.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.391998
+$# 
+$# End of NASTRAN input file translation.
+$# Patran Nastran Preference Patran 2019 has released 1 license(s) to FLEXlm 
+$# at 29-May-20 03:41:05.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c 
+$# C:\MSC.Software\Patran_x64\20190\bin\MscNastranExecute.exe 
+$# -j newwin -m bdf -x 2019 -v

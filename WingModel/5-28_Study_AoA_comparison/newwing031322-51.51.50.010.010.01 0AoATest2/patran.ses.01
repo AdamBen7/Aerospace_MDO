@@ -1,0 +1,273 @@
+$# Session file patran.ses.01 started recording at 30-May-20 02:42:26
+$# Build: 25.0.638960 Wed Mar 13 04:42:59 PDT 2019
+$# Recorded by: Patran 2019
+uil_file_open.go( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptF" // @
+"ramework\WingModel\A - 5-28 Study 0,5AoA comparison\newwing031322-51.51.5" // @
+"0.010.010.01 0AoATest2\newwing031322-51.51.50.010.010.01.db" )
+$# Creating database backup files.
+$# Database version 3.20 created by Patran 2019 successfully opened.
+$# Appending to existing journal file C:\Users\localbenabbou\Box 
+$# Sync\Research - MDO\WingOptFramework\WingModel\A - 5-28 Study 0,5AoA 
+$# comparison\newwing031322-51.51.50.010.010.01 
+$# 0AoATest2\newwing031322-51.51.50.010.010.01.db.jou at 30-May-20 02:42:28
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: 27500@coe-lic-msc.ua.edu
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 30-May-20 02:42:29.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\MSC.Software\Patran_x64\20190\loads_browser.dll
+$# ¿Ô"S shared library 'Loads Browser', Version 2019, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ga_viewport_location_set( "default_viewport", 0.000000, 0.000000, 1 )
+$#  Beginning analysis of  Pure_Static_-_NOAERO
+jobfile.open( "Pure_Static_-_NOAERO", "ANALYZE NO JOBFILE" )
+msc_delete_old_files( "Pure_Static_-_NOAERO", ".bdf", ".op2" )
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["30-May-20" @
+, "02:42:50"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\localbenabbou\Box Sync\Research - MD" // @
+"O\WingOptFramework\WingModel\A - 5-28 Study 0,5AoA comparison\newwing0313" // @
+"22-51.51.50.01" )
+jobfile.writec( "JOBNAME", "Pure_Static_-_NOAERO" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 18-May-20 at" // @
+" 02:40:41" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".op2" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\localbenabbou" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\help" // @
+"files" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\alters" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icon" // @
+"s\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin\exe" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\msce" // @
+"xplore_files\" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT+HDF5" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2019." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-DERIVATION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\localbenabbou" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "Pure_Static_-_NOAERO", 1, [ @
+"Default"] )
+analysis_submit_2( "MSC.Nastran", "Pure_Static_-_NOAERO" )
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 30-May-20 02:42:50.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\localbenabbou\Box\ Sync\Research\ -\ 
+$# MDO\WingOptFramework\WingModel\A\ -\ 5-28\ Study\ 0,5AoA\ 
+$# comparison\newwing031322-51.51.50.010.010.01\ 
+$# 0AoATest2\newwing031322-51.51.50.010.010.01.db.
+$# Messages output from the Patran 2019 input deck translator on May       30,
+$#  2020 at 02:42:50.
+$# 
+$# The NASTRAN input file, Pure_Static_-_NOAERO.bdf, has been successfully 
+$# opened.
+$# 
+$# Translating 648 elements from the element property region Panel_1.
+$# 
+$# Translating 648 elements from the element property region Panel_2.
+$# 
+$# Translating 432 elements from the element property region Panel_3.
+$# 
+$# Translating 810 elements from the element property region Ribs.
+$# 
+$# Translating 288 elements from the element property region Spar_1.
+$# 
+$# Translating 288 elements from the element property region Spar_2.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 1 multipoint constraints from the entire model.
+$# 
+$# Translating 2822 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : Fixed_Root.
+$# Writing interface element lbcs.
+$# 
+$# Translating gravity loading in load set : Gravity.
+$# Total execution time in real seconds: 1
+$# Total execution time in CPU seconds: 0.374
+$# 
+$# End of NASTRAN input file translation.
+$# Patran Nastran Preference Patran 2019 has released 1 license(s) to FLEXlm 
+$# at 30-May-20 02:42:51.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c 
+$# C:\MSC.Software\Patran_x64\20190\bin\MscNastranExecute.exe 
+$# -j Pure_Static_-_NOAERO -m bdf -x 2019 -v
+ga_view_center_set( -0.149671, 0.331579 )
+ga_view_zoom_set( 1.443750 )
+ga_view_center_set( -0.752817, 1.594860 )
+ga_view_zoom_set( 3.067969 )
+ga_view_center_set( -0.442105, 0.944079 )
+ga_view_zoom_set( 2.231250 )
+ga_view_center_set( -0.752817, 1.594860 )
+ga_view_zoom_set( 3.067968 )
+ga_view_center_set( -1.180045, 2.489684 )
+ga_view_zoom_set( 4.218456 )
+ga_view_center_set( -1.767484, 3.720067 )
+ga_view_zoom_set( 5.800377 )
+ga_view_center_set( -2.575212, 5.411844 )
+ga_view_zoom_set( 7.975519 )
+ga_view_center_set( -3.685838, 7.738037 )
+ga_view_zoom_set( 10.966338 )
+ga_view_center_set( -5.212951, 10.936552 )
+ga_view_zoom_set( 15.078715 )
+ga_view_aa_set( -3.156395, 21.375275, -53.535507 )
+uil_file_close.goquit(  )
+$# Question from application FILE
+$#     Do you wish to save changes made to the Patran 2019 database during 
+$# this session ?
+$? YES 36000012 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-May-20 03:59:38
+$# Session file patran.ses.01 stopped recording at 30-May-20 03:59:48

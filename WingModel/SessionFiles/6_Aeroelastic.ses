@@ -1,0 +1,29 @@
+$# ===================== Aeroelastic Time =========================
+
+uil_pref_analysis.set_analysis_preference( "MSC.Nastran", "Aeroelasticity",  @
+".bdf", ".op2", "No Mapping" )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "138", "Curve 1", "Curve 2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 138
+sgm_const_surface_2curve( "139", "Curve 3", "Curve 4",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 139
+
+
+flat_plate_surf_create( "FlatPlate", [0., 0., 0.], [0., 0., 0.], 0., 0.,   @
+101001, 1, 0, "None", 0, ["empty"], 6, 6, [0., 0.2, 0.40000001, 0.60000002,   @
+0.80000001, 1.], [0., 0.2, 0.40000001, 0.60000002, 0.80000001, 1.], FALSE,   @
+"Surface 138:139", 0, TRUE )
+$# 1 Surface Created: Surface 140
+$# Group "FlatPlate" created.
+$# Property Set "FlatPlate" created.
+$# 1 Surface Deleted: Surface 140
+flds_store_start_elem_id( 102001 )
+ 
+flds_rigid_bdy_mot_cntrl_mod( "ANGLEA", "Linear", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "SIDES", "Do Not Create", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "ROLL", "Do Not Create", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "PITCH", "Do Not Create", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "YAW", "Do Not Create", "AeroSG2D" )
+

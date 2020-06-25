@@ -1,0 +1,24 @@
+mscnastran_subcase.create( "144", "5_AoA", "" )
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "AERO SUBCASE METHOD NAME",   @
+"Flexible Trim" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",   @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",   @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",   @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC FORCES", "1" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC FORCES 1", "AEROF=0" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC PRESSURES", "1" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC PRESSURES 1", "APRES=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "AERO BOUNDARY SYMMETRY FLAG",   @
+"Asymmetric" )
+mscnastran_subcase.create_char_param( "AERO GROUND SYMMETRY FLAG",   @
+"Asymmetric" )

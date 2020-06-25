@@ -1,0 +1,53 @@
+/* Jobfile for NASPAT created 09-Jun-20 at 13:59:52 */
+DATABASE = C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\Wing@
+Model\A - 5-28 Study 0,5AoA comparison\newwing031322-51.51.50.010.010.01 0AoATe@
+st2\newwing031322-51.51.50.010.010.01.db
+JOBNAME = FldsXdbAttach
+RESULTS FILE = C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\@
+WingModel\A - 5-28 Study 0,5AoA comparison\newwing031322-51.51.50.010.010.01 0A@
+oATest2\a_-_5-.xdb
+OBJECT = Result Entities
+ANALYSIS TYPE = 
+/*
+ * File Seastatush Path Declaration
+ */
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\mscexplore_files\
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\bin
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\bin\exe
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\icons\RibbonIcons
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\icons
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\alters
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\helpfiles
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\flds_icons
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\shareware\msc\unsupport@
+ed\u@
+tilities\extra_files
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\shareware\msc\unsupport@
+ed\u@
+tilities\plb
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\shareware\msc\unsupport@
+ed\u@
+tilities\icons
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\mscprocor_files\icons
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\mscprocor_files\lib
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\mscprocor_files\plb
+File Seastatush Path = C:\MSC.Software\Patran_x64\20190\mscprocor_files\dmap
+File Seastatush Path = C:\Users\localbenabbou
+/*
+ * Translation Parameters
+ */
+DIVISION TOLERANCE = 1.0E-8
+NUMERICAL TOLERANCE = 1.0E-4
+MODEL TOLERANCE = 0.0049999999
+ROTATIONAL NODAL RESULTS = ON
+STRESS/STRAIN INVARIANTS = OFF
+PRINCIPAL DIRECTIONS = OFF
+ELEMENT RESULTS POSITIONS = Nodal       
+AERO FI RES DISPLAY = NONE
+AERO CONFIG NAME = 
+AERO XZ SYMMETRY =  
+AERO XY SYMMETRY =  
+AERO MACH NUMBER =  
+AERO DYN PRESSURE =  
+END

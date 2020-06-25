@@ -1,0 +1,20 @@
+$# ===================== Generate MPC and BC =========================
+
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 1:7 100:105 198:203 1178:1183 1276:1281 1374:1378 2360:2383 2398:240" // @
+"3 2405:2410 2412:2417 2419:2424 2426:2431 2446:2449 2451:2453 2455:2462 2" // @
+"464:2467", "Node 90001"], ["UX,UY,UZ,RX,RY,RZ", ""] )
+$# MPC 1 created.
+
+loadsbcs_create2( "Fixed_Root", "Displacement", "Nodal", "", "Static", [ @
+"Node 90001"], "FEM", "Coord 0", "1.", ["< 0,0,0    >", "<  0,0,0   >",  @
+"<     >", "<     >"], ["", "", "", ""] )
+$# Load/BC set "Fixed_Root" created.
+
+loadsbcs_create2( "Gravity", "Inertial Load", "Element Uniform", "3D",  @
+"Static", [""], "Geometry", "Coord 0", "1.", ["<0,0,-9.81     >", "<     >",  @
+"<     >"], ["", "", ""] )
+$# Application Region List is "blank".
+$# Load/BC set "Gravity" created.

@@ -1,0 +1,37 @@
+$ MSC.Nastran input file created by me on
+$ MATLAB
+$ Direct Text Input for Nastran System Cell Section
+$ Direct Text Input for File Management Section
+$
+$ Aero DB FMS Statements
+$ Direct Text Input for Executive Control
+$ Static AeroElastic Analysis
+SOL 144
+TIME 600
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = MSC.Nastran Aeroelastic job created on 18-May-20 at 13:46:00
+ECHO = NONE
+ELSUM(EID,PID,BOTH,EIDSUM)=ALL 
+MAXLINES = 999999
+AECONFIG = AeroSG2D
+SUBCASE 1
+$ Subcase name : 5_AoA
+   SUBTITLE=Default
+   SPC = 2
+   LOAD = 2
+   DISPLACEMENT(SORT1,REAL)=ALL
+   SPCFORCES(SORT1,REAL)=ALL
+   STRESS(SORT1,REAL,VONMISES,BILIN)=ALL
+TRIM = 1
+AESYMXZ = Asymmetric
+AESYMXY = Asymmetric
+AEROF = ALL
+APRES = ALL
+$ Direct Text Input for this Subcase
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM    WTMASS 1.
+PARAM    SNORM  20.
+PARAM   PRTMAXIM YES

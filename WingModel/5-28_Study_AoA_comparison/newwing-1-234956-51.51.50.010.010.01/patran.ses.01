@@ -1,0 +1,49 @@
+$# Session file patran.ses.01 started recording at 30-May-20 23:56:48
+$# Build: 25.0.638960 Wed Mar 13 04:42:59 PDT 2019
+$# Recorded by: Patran 2019
+uil_file_open.go( "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptF" // @
+"ramework\WingModel\newwing-1-234956-51.51.50.010.010.01\newwing-1-234956-" // @
+"51.51.50.010.010.01.db" )
+$# Question from application FILE
+$#     Old backup files exists for C:\Users\localbenabbou\Box Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing-1-234956-51.51.50.010.010.01\newwing
+$# -1-234956-51.51.50.010.010.01.db. 
+$# Do you want to update them with the current database and journal file ?
+$? YES 36000011 
+$# Creating database backup files.
+$# Database version 3.20 created by Patran 2019 successfully opened.
+$# Appending to existing journal file C:\Users\localbenabbou\Box 
+$# Sync\Research - 
+$# MDO\WingOptFramework\WingModel\newwing-1-234956-51.51.50.010.010.01\newwing
+$# -1-234956-51.51.50.010.010.01.db.jou at 30-May-20 23:57:10
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: 27500@coe-lic-msc.ua.edu
+$# Patran 2019 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node HAR-210-04(00059a3c7a00) (Windows 6.2 (Build 
+$# 9200: Service Pack 0)) at 30-May-20 23:57:12.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\MSC.Software\Patran_x64\20190\loads_browser.dll
+$#  νί¶7 shared library 'Loads Browser', Version 2019, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ga_viewport_location_set( "default_viewport", 0.000000, 0.000000, 1 )
+ga_view_center_set( 0.190927, 0.107077 )
+ga_view_zoom_set( 1.443750 )
+ga_view_center_set( 0.450334, 0.260541 )
+ga_view_zoom_set( 1.985156 )
+ga_view_center_set( 0.804877, 0.477979 )
+ga_view_zoom_set( 2.729589 )
+ga_view_center_set( 1.257026, 0.835870 )
+ga_view_zoom_set( 3.753186 )
+ga_view_center_set( 1.866582, 1.388722 )
+ga_view_zoom_set( 5.160630 )
+ga_view_aa_set( -59.457207, 7.669775, 52.291714 )
+uil_file_close.goquit(  )
+$# Question from application FILE
+$#     Do you wish to save changes made to the Patran 2019 database during 
+$# this session ?
+$? NO 36000012 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-May-20 23:57:34
+$# Restoring the database from the backup files.
+$# Session file patran.ses.01 stopped recording at 30-May-20 23:57:34

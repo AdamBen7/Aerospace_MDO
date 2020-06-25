@@ -1,0 +1,29 @@
+mscnastran_subcase.create_real_param( "AERO VELOCITY", 0. )
+mscnastran_subcase.create_char_param( "AERO AIC FLAG", "TRUE" )
+mscnastran_subcase.create_int_param( "AERO RB MOTION 0", 11 )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 1", "ANGLEA" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 2", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 3", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 4", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 5", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 6", "URDD1" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 7", "URDD2" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 8", "URDD3" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 9", "URDD4" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 10", "URDD5" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 11", "URDD6" )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",   @
+"AERO USE ARRAY", 1, 11, [-1., -2., -2., -2., -2., -2., -2., -2., -2., -2.,   @
+-2.] )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",   @
+"AERO ARRAY OF FIXED VALUES", 1, 11, [0.0873, 0., 0., 0., 0., 0., 0., 0.,  0., @
+ 0., 0.] )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",   @
+"AERO LINK FACTOR MATRIX", 11, 11, [[0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,   @
+0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0.,   @
+0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0.,   @
+0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0.,   @
+0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0.,   @
+0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0.,   @
+0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]] )
+mscnastran_subcase.create_int_param( "AERO NUMBER OF RESTRAINED NODES", 0 )

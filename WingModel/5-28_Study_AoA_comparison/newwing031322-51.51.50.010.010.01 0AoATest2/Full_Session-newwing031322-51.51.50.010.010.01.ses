@@ -1,0 +1,916 @@
+$# ================== Session File Starts =====================================
+
+uil_file_new.go( "C:\MSC.Software\Patran_x64\20190/template.db", "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel\newwing031322-51.51.50.010.010.01\newwing031322-51.51.50.010.010.01.db")
+set_current_dir( "  C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel\newwing031322-51.51.50.010.010.01")
+!!INPUT "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel\newwing031322-51.51.50.010.010.01\newwing031322-51.51.50.010.010.01.dat"
+
+
+$# ================== Generating All Groups ===================================
+
+ga_group_create( "Spar" )
+ga_group_create( "Ribs" )
+ga_group_create( "Bot_Surf" )
+ga_group_create( "Top_Surf" )
+ga_group_current_set( "Top_Surf" )
+sys_poll_option( 0 )
+
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0.000000,0,0.000000]" //@
+"[0.000876,0,0.006390]" // @
+"[0.003501,0,0.012643][0.007870,0,0.018752]" // @
+"[0.013972,0,0.024706][0.021794,0,0.030495]" // @
+"[0.031316,0,0.036106][0.042516,0,0.041524]" // @
+"[0.055369,0,0.046734][0.069844,0,0.051719]" // @
+"[0.085908,0,0.056462][0.103523,0,0.060947]" // @
+"[0.122647,0,0.065156][0.143237,0,0.069073]" // @
+"[0.165244,0,0.072685][0.188617,0,0.075977]" // @
+"[0.213301,0,0.078938][0.239238,0,0.081557]" // @
+"[0.266368,0,0.083828][0.294628,0,0.085746]" // @
+"[0.323951,0,0.087307][0.354270,0,0.088512]" // @
+"[0.385512,0,0.089363][0.417606,0,0.089865]" // @
+"[0.450477,0,0.090026][0.484046,0,0.089854]" // @
+"[0.518237,0,0.089362][0.552969,0,0.088563]" // @
+"[0.588162,0,0.087472][0.623732,0,0.086105]" // @
+"[0.659598,0,0.084480][0.695674,0,0.082615]" // @
+"[0.731877,0,0.080530][0.768123,0,0.078243]" // @
+"[0.804326,0,0.075774][0.840402,0,0.073143]" // @
+"[0.876268,0,0.070369][0.911838,0,0.067470]" // @
+"[0.947031,0,0.064467][0.981763,0,0.061376]" // @
+"[1.015954,0,0.058216][1.049523,0,0.055005]" // @
+"[1.082394,0,0.051759][1.114488,0,0.048494]" // @
+"[1.145730,0,0.045227][1.176049,0,0.041974]" // @
+"[1.205372,0,0.038751][1.233632,0,0.035571]" // @
+"[1.260762,0,0.032452][1.286699,0,0.029408]" // @
+"[1.311383,0,0.026453][1.334756,0,0.023603]" // @
+"[1.356763,0,0.020871][1.377353,0,0.018273]" // @
+"[1.396477,0,0.015823][1.414092,0,0.013533]" // @
+"[1.430156,0,0.011416][1.444631,0,0.009486]" // @
+"[1.457484,0,0.007753][1.468684,0,0.006228]" // @
+"[1.478206,0,0.004921][1.486028,0,0.003839]" // @
+"[1.492130,0,0.002991][1.496499,0,0.002381]" // @
+"[1.499124,0,0.002013][1.500000,0,0.001890]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$? YESFORALL 1000034
+asm_const_grid_xyz( "67", "[0.000000,5.00000,0.000000]" //@
+"[0.000876,5.00000,0.006390]" // @
+"[0.003501,5.00000,0.012643][0.007870,5.00000,0.018752]" // @
+"[0.013972,5.00000,0.024706][0.021794,5.00000,0.030495]" // @
+"[0.031316,5.00000,0.036106][0.042516,5.00000,0.041524]" // @
+"[0.055369,5.00000,0.046734][0.069844,5.00000,0.051719]" // @
+"[0.085908,5.00000,0.056462][0.103523,5.00000,0.060947]" // @
+"[0.122647,5.00000,0.065156][0.143237,5.00000,0.069073]" // @
+"[0.165244,5.00000,0.072685][0.188617,5.00000,0.075977]" // @
+"[0.213301,5.00000,0.078938][0.239238,5.00000,0.081557]" // @
+"[0.266368,5.00000,0.083828][0.294628,5.00000,0.085746]" // @
+"[0.323951,5.00000,0.087307][0.354270,5.00000,0.088512]" // @
+"[0.385512,5.00000,0.089363][0.417606,5.00000,0.089865]" // @
+"[0.450477,5.00000,0.090026][0.484046,5.00000,0.089854]" // @
+"[0.518237,5.00000,0.089362][0.552969,5.00000,0.088563]" // @
+"[0.588162,5.00000,0.087472][0.623732,5.00000,0.086105]" // @
+"[0.659598,5.00000,0.084480][0.695674,5.00000,0.082615]" // @
+"[0.731877,5.00000,0.080530][0.768123,5.00000,0.078243]" // @
+"[0.804326,5.00000,0.075774][0.840402,5.00000,0.073143]" // @
+"[0.876268,5.00000,0.070369][0.911838,5.00000,0.067470]" // @
+"[0.947031,5.00000,0.064467][0.981763,5.00000,0.061376]" // @
+"[1.015954,5.00000,0.058216][1.049523,5.00000,0.055005]" // @
+"[1.082394,5.00000,0.051759][1.114488,5.00000,0.048494]" // @
+"[1.145730,5.00000,0.045227][1.176049,5.00000,0.041974]" // @
+"[1.205372,5.00000,0.038751][1.233632,5.00000,0.035571]" // @
+"[1.260762,5.00000,0.032452][1.286699,5.00000,0.029408]" // @
+"[1.311383,5.00000,0.026453][1.334756,5.00000,0.023603]" // @
+"[1.356763,5.00000,0.020871][1.377353,5.00000,0.018273]" // @
+"[1.396477,5.00000,0.015823][1.414092,5.00000,0.013533]" // @
+"[1.430156,5.00000,0.011416][1.444631,5.00000,0.009486]" // @
+"[1.457484,5.00000,0.007753][1.468684,5.00000,0.006228]" // @
+"[1.478206,5.00000,0.004921][1.486028,5.00000,0.003839]" // @
+"[1.492130,5.00000,0.002991][1.496499,5.00000,0.002381]" // @
+"[1.499124,5.00000,0.002013][1.500000,5.00000,0.001890]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$? YESFORALL 1000034
+STRING sgm_curve_bspline_created_ids[VIRTUAL]
+sgm_const_curve_bspline( "1", "Point 1:66", 10, TRUE, 1, FALSE,   @
+sgm_curve_bspline_created_ids )
+sgm_const_curve_bspline( "2", "Point 67:132", 10, TRUE, 1, FALSE,   @
+sgm_curve_bspline_created_ids )
+ga_group_current_set( "Bot_Surf" )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "133", "[0.000876,0,-0.006390]" //@
+"[0.003501,0,-0.012643]" // @
+"[0.007870,0,-0.018752][0.013972,0,-0.024706]" // @
+"[0.021794,0,-0.030495][0.031316,0,-0.036106]" // @
+"[0.042516,0,-0.041524][0.055369,0,-0.046734]" // @
+"[0.069844,0,-0.051719][0.085908,0,-0.056462]" // @
+"[0.103523,0,-0.060947][0.122647,0,-0.065156]" // @
+"[0.143237,0,-0.069073][0.165244,0,-0.072685]" // @
+"[0.188617,0,-0.075977][0.213301,0,-0.078938]" // @
+"[0.239238,0,-0.081557][0.266368,0,-0.083828]" // @
+"[0.294628,0,-0.085746][0.323951,0,-0.087307]" // @
+"[0.354270,0,-0.088512][0.385512,0,-0.089363]" // @
+"[0.417606,0,-0.089865][0.450477,0,-0.090026]" // @
+"[0.484046,0,-0.089854][0.518237,0,-0.089362]" // @
+"[0.552969,0,-0.088563][0.588162,0,-0.087472]" // @
+"[0.623732,0,-0.086105][0.659598,0,-0.084480]" // @
+"[0.695674,0,-0.082615][0.731877,0,-0.080530]" // @
+"[0.768123,0,-0.078243][0.804326,0,-0.075774]" // @
+"[0.840402,0,-0.073143][0.876268,0,-0.070369]" // @
+"[0.911838,0,-0.067470][0.947031,0,-0.064467]" // @
+"[0.981763,0,-0.061376][1.015954,0,-0.058216]" // @
+"[1.049523,0,-0.055005][1.082394,0,-0.051759]" // @
+"[1.114488,0,-0.048494][1.145730,0,-0.045227]" // @
+"[1.176049,0,-0.041974][1.205372,0,-0.038751]" // @
+"[1.233632,0,-0.035571][1.260762,0,-0.032452]" // @
+"[1.286699,0,-0.029408][1.311383,0,-0.026453]" // @
+"[1.334756,0,-0.023603][1.356763,0,-0.020871]" // @
+"[1.377353,0,-0.018273][1.396477,0,-0.015823]" // @
+"[1.414092,0,-0.013533][1.430156,0,-0.011416]" // @
+"[1.444631,0,-0.009486][1.457484,0,-0.007753]" // @
+"[1.468684,0,-0.006228][1.478206,0,-0.004921]" // @
+"[1.486028,0,-0.003839][1.492130,0,-0.002991]" // @
+"[1.496499,0,-0.002381][1.499124,0,-0.002013]" // @
+"[1.500000,0,-0.001890]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$? YESFORALL 1000034
+asm_const_grid_xyz( "198", "[0.000876,5.000000,-0.006390]" //@
+"[0.003501,5.000000,-0.012643]" // @
+"[0.007870,5.000000,-0.018752][0.013972,5.000000,-0.024706]" // @
+"[0.021794,5.000000,-0.030495][0.031316,5.000000,-0.036106]" // @
+"[0.042516,5.000000,-0.041524][0.055369,5.000000,-0.046734]" // @
+"[0.069844,5.000000,-0.051719][0.085908,5.000000,-0.056462]" // @
+"[0.103523,5.000000,-0.060947][0.122647,5.000000,-0.065156]" // @
+"[0.143237,5.000000,-0.069073][0.165244,5.000000,-0.072685]" // @
+"[0.188617,5.000000,-0.075977][0.213301,5.000000,-0.078938]" // @
+"[0.239238,5.000000,-0.081557][0.266368,5.000000,-0.083828]" // @
+"[0.294628,5.000000,-0.085746][0.323951,5.000000,-0.087307]" // @
+"[0.354270,5.000000,-0.088512][0.385512,5.000000,-0.089363]" // @
+"[0.417606,5.000000,-0.089865][0.450477,5.000000,-0.090026]" // @
+"[0.484046,5.000000,-0.089854][0.518237,5.000000,-0.089362]" // @
+"[0.552969,5.000000,-0.088563][0.588162,5.000000,-0.087472]" // @
+"[0.623732,5.000000,-0.086105][0.659598,5.000000,-0.084480]" // @
+"[0.695674,5.000000,-0.082615][0.731877,5.000000,-0.080530]" // @
+"[0.768123,5.000000,-0.078243][0.804326,5.000000,-0.075774]" // @
+"[0.840402,5.000000,-0.073143][0.876268,5.000000,-0.070369]" // @
+"[0.911838,5.000000,-0.067470][0.947031,5.000000,-0.064467]" // @
+"[0.981763,5.000000,-0.061376][1.015954,5.000000,-0.058216]" // @
+"[1.049523,5.000000,-0.055005][1.082394,5.000000,-0.051759]" // @
+"[1.114488,5.000000,-0.048494][1.145730,5.000000,-0.045227]" // @
+"[1.176049,5.000000,-0.041974][1.205372,5.000000,-0.038751]" // @
+"[1.233632,5.000000,-0.035571][1.260762,5.000000,-0.032452]" // @
+"[1.286699,5.000000,-0.029408][1.311383,5.000000,-0.026453]" // @
+"[1.334756,5.000000,-0.023603][1.356763,5.000000,-0.020871]" // @
+"[1.377353,5.000000,-0.018273][1.396477,5.000000,-0.015823]" // @
+"[1.414092,5.000000,-0.013533][1.430156,5.000000,-0.011416]" // @
+"[1.444631,5.000000,-0.009486][1.457484,5.000000,-0.007753]" // @
+"[1.468684,5.000000,-0.006228][1.478206,5.000000,-0.004921]" // @
+"[1.486028,5.000000,-0.003839][1.492130,5.000000,-0.002991]" // @
+"[1.496499,5.000000,-0.002381][1.499124,5.000000,-0.002013]" // @
+"[1.500000,5.000000,-0.001890]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$? YESFORALL 1000034
+STRING sgm_curve_bspline_created_ids[VIRTUAL]
+sgm_const_curve_bspline( "3", "Point 1 133:197 66", 10, TRUE, 1, FALSE,   @
+sgm_curve_bspline_created_ids )
+sgm_const_curve_bspline( "4", "Point 67 198:262 132", 10, TRUE, 1, FALSE,   @
+sgm_curve_bspline_created_ids )
+STRING asm_delete_any_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 1:262", asm_delete_any_deleted_ids )
+
+$# ================== Generating 3D Geometry ============================
+
+ga_group_current_set( "Top_Surf" )
+ 
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "1", "Curve 1", "Curve 2",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 1
+ 
+ga_group_current_set( "Bot_Surf" )
+sgm_const_surface_2curve( "2", "Curve 3", "Curve 4",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 2
+
+ga_group_current_set( "Top_Surf" )
+STRING sgm_surface_break_p_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "3", "Surface 1", TRUE, 1, 1, `spar1_location`, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 3,4
+STRING sgm_surface_break_p_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "5", "Surface 4", TRUE, 1, 1, `spar2_location`, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 5,6
+
+ga_group_current_set( "Bot_Surf" )
+STRING sgm_surface_break_p_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "7", "Surface 2", TRUE, 1, 1, `spar1_location`, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 7,8
+STRING sgm_surface_break_p_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "9", "Surface 8", TRUE, 1, 1, `spar2_location`, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 9,10
+
+ga_group_current_set( "Top_Surf" )
+STRING sgm_surface_break_p_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "11", "Surface 3", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 11,12
+sgm_edit_surface_break_v1( "13", "Surface 5", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 13,14
+sgm_edit_surface_break_v1( "15", "Surface 6", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 15,16
+sgm_edit_surface_break_v1( "17", "Surface 11", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 17,18
+sgm_edit_surface_break_v1( "19", "Surface 13", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 19,20
+sgm_edit_surface_break_v1( "21", "Surface 15", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 21,22
+sgm_edit_surface_break_v1( "23", "Surface 12", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 23,24
+sgm_edit_surface_break_v1( "25", "Surface 14", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 25,26
+sgm_edit_surface_break_v1( "27", "Surface 16", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 27,28
+sgm_edit_surface_break_v1( "29", "Surface 17", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 29,30
+sgm_edit_surface_break_v1( "31", "Surface 19", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 31,32
+sgm_edit_surface_break_v1( "33", "Surface 21", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 33,34
+sgm_edit_surface_break_v1( "35", "Surface 18", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 35,36
+sgm_edit_surface_break_v1( "37", "Surface 20", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 37,38
+sgm_edit_surface_break_v1( "39", "Surface 22", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 39,40
+sgm_edit_surface_break_v1( "41", "Surface 23", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 41,42
+sgm_edit_surface_break_v1( "43", "Surface 25", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 43,44
+sgm_edit_surface_break_v1( "45", "Surface 27", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 45,46
+sgm_edit_surface_break_v1( "47", "Surface 24", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 47,48
+sgm_edit_surface_break_v1( "49", "Surface 26", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 49,50
+sgm_edit_surface_break_v1( "51", "Surface 28", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 51,52
+
+
+ga_group_current_set( "Bot_Surf" )
+STRING sgm_surface_break_p_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "53", "Surface 7", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 53,54
+sgm_edit_surface_break_v1( "55", "Surface 9", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 55,56
+sgm_edit_surface_break_v1( "57", "Surface 10", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 57,58
+sgm_edit_surface_break_v1( "59", "Surface 53", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 59,60
+sgm_edit_surface_break_v1( "61", "Surface 55", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 61,62
+sgm_edit_surface_break_v1( "63", "Surface 57", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 63,64
+sgm_edit_surface_break_v1( "65", "Surface 54", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 65,66
+sgm_edit_surface_break_v1( "67", "Surface 56", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 67,68
+sgm_edit_surface_break_v1( "69", "Surface 58", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 69,70
+sgm_edit_surface_break_v1( "71", "Surface 59", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 71,72
+sgm_edit_surface_break_v1( "73", "Surface 61", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 73,74
+sgm_edit_surface_break_v1( "75", "Surface 63", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 75,76
+sgm_edit_surface_break_v1( "77", "Surface 60", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 77,78
+sgm_edit_surface_break_v1( "79", "Surface 62", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 79,80
+sgm_edit_surface_break_v1( "81", "Surface 64", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 81,82
+sgm_edit_surface_break_v1( "83", "Surface 65", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 83,84
+sgm_edit_surface_break_v1( "85", "Surface 67", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 85,86
+sgm_edit_surface_break_v1( "87", "Surface 69", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 87,88
+sgm_edit_surface_break_v1( "89", "Surface 66", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 89,90
+sgm_edit_surface_break_v1( "91", "Surface 68", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 91,92
+sgm_edit_surface_break_v1( "93", "Surface 70", TRUE, 1, 2, 0.5, "", "", "",  @
+sgm_surface_break_p_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 2 Surfaces Created: Surfaces 93,94
+
+ga_group_current_set( "Ribs" )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "95", "Surface 29.4 31.4 33.4",  @
+"Surface 71.4 73.4 75.4", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 95:97
+sgm_const_surface_2curve( "98", "Surface 29.2 31.2 33.2",  @
+"Surface 71.2 73.2 75.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 98:100
+sgm_const_surface_2curve( "101", "Surface 30.2 32.2 34.2",  @
+"Surface 72.2 74.2 76.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 101:103
+sgm_const_surface_2curve( "104", "Surface 35.2 37.2 39.2",  @
+"Surface 77.2 79.2 81.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 104:106
+sgm_const_surface_2curve( "107", "Surface 36.2 38.2 40.2",  @
+"Surface 78.2 80.2 82.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 107:109
+sgm_const_surface_2curve( "110", "Surface 41.2 43.2 45.2",  @
+"Surface 83.2 85.2 87.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 110:112
+sgm_const_surface_2curve( "113", "Surface 42.2 44.2 46.2",  @
+"Surface 84.2 86.2 88.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 113:115
+sgm_const_surface_2curve( "116", "Surface 47.2 49.2 51.2",  @
+"Surface 89.2 91.2 93.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 116:118
+sgm_const_surface_2curve( "119", "Surface 48.2 50.2 52.2",  @
+"Surface 90.2 92.2 94.2", sgm_surface_2curve_created_ids )
+$# 3 Surfaces Created: Surfaces 119:121
+
+
+ga_group_current_set( "Spar" )
+sgm_const_surface_2curve( "122", "Surface 29.3 30.3 35.3 36.3 41.3 42.3 47" // @
+".3 48.3", "Surface 71.3 72.3 77.3 78.3 83.3 84.3 89.3 90.3",  @
+sgm_surface_2curve_created_ids )
+$# 8 Surfaces Created: Surfaces 122:129
+sgm_const_surface_2curve( "130", "Surface 31.3 32.3 37.3 38.3 43.3 44.3 49" // @
+".3 50.3", "Surface 73.3 74.3 79.3 80.3 85.3 86.3 91.3 92.3",  @
+sgm_surface_2curve_created_ids )
+$# 8 Surfaces Created: Surfaces 130:137
+
+
+$# ================================= PROPERTIES ==================================
+ga_group_current_set( "default_group" )
+
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "AL6061", 0,  @
+"Date: 07-May-20           Time: 15:02:31", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["68.9e9",  @
+".33", "2700", ""] )
+
+elementprops_create( "Panel_1", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111, @
+ 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:AL6061", "", "`panel_t1`" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
+"Surface 29:35 37 39 71:77 79 81" )
+$# Property Set "Panel_1" created.
+
+elementprops_create( "Panel_2", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111, @
+ 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:AL6061", "", "`panel_t2`" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
+"Surface 36:40:2 41:46 78:82:2 83:88" )
+$# Property Set "Panel_2" created.
+
+elementprops_create( "Panel_3", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111, @
+ 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:AL6061", "", "`panel_t3`" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
+"Surface 47:52 89:94" )
+$# Property Set "Panel_3" created.
+
+elementprops_create( "Ribs", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111,  @
+4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:AL6061", "", "`rib_t`",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 95:121" )
+$# Property Set "Ribs" created.
+
+elementprops_create( "Spar_1", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111,  @
+4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:AL6061", "", "`spar1_t`", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 122:129" )
+$# Property Set "Spar_1" created.
+
+elementprops_create( "Spar_2", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111,  @
+4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:AL6061", "", "`spar2_t`", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 130:137" )
+$# Property Set "Spar_2" created.
+
+
+$# ================================= Meshing ==================================
+
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Curve 1:4 Surface 71.1 72.1 75.3 76.3 77.1 78.1 81.3 82" // @
+".3 83.1 84.1 87.3 88.3 89.1 90.1 93.3 94.3 95.4 95.2 96.4 96.2 97.3 97.4 " // @
+"97.2 98.2 98.4 99.4 99.2 100.3 100.4 100.2 101.2 101.4 102.4 102.2 103.3 " // @
+"103.4 103.2 104.4 104.2 105.2 105.4 106.3 106.4 106.2 107.4 107.2 108.2 1" // @
+"08.4 109.3 109.4 109.2 110.4 110.2 111.4 111.2 112.2 112.3 112.4 113.4 11" // @
+"3.2 114.4 114.2 115.2 115.3 115.4 116.4 116.2 117.4 117.2 118.3 118.4 118" // @
+".2 119.2 119.4 120.4 120.2 121.3 121.4 121.2 122.2 122.3 122.4 122.1 123." // @
+"2 123.3 123.4 124.3 124.4 124.2 125.2 125.3 125.4 126.3 126.4 126.2 127.3" // @
+" 127.4 127.2 128.2 128.3 128.4 129.3 129.4 129.2 130.1 130.2 130.3 130.4 " // @
+"131.3 131.4 131.2 132.2 132.3 132.4 133.3 133.4 133.2 134.2 134.3 134.4 1" // @
+"35.3 135.4 135.2 136.2 136.3 136.4 137.3 137.4 137.2", 1, 6, 0., 0., 0. )
+$# Surface 97.3 has zero length.  Ignored.
+$# Surface 100.3 has zero length.  Ignored.
+$# Surface 103.3 has zero length.  Ignored.
+$# Surface 106.3 has zero length.  Ignored.
+$# Surface 109.3 has zero length.  Ignored.
+$# Surface 112.3 has zero length.  Ignored.
+$# Surface 115.3 has zero length.  Ignored.
+$# Surface 118.3 has zero length.  Ignored.
+$# Surface 121.3 has zero length.  Ignored.
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 29:52 71:137", 1, [ @
+"0.141625"], "Quad4", "#", "#", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# === 4243 nodes created.  IDs  = 1:4243.
+$# === 3114 elements created.  IDs  = 1:3114.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 1422 nodes deleted.
+$# =================== MPC Nodal Placement ===============
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "90001", "[0.375000 0 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+STRING fem_create_nodes__nodes_created[VIRTUAL]
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "90001", " Point 90001",  @
+fem_create_nodes__nodes_created )
+$# ===================== Generate MPC and BC =========================
+
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 1:7 100:105 198:203 1178:1183 1276:1281 1374:1378 2360:2383 2398:240" // @
+"3 2405:2410 2412:2417 2419:2424 2426:2431 2446:2449 2451:2453 2455:2462 2" // @
+"464:2467", "Node 90001"], ["UX,UY,UZ,RX,RY,RZ", ""] )
+$# MPC 1 created.
+
+loadsbcs_create2( "Fixed_Root", "Displacement", "Nodal", "", "Static", [ @
+"Node 90001"], "FEM", "Coord 0", "1.", ["< 0,0,0    >", "<  0,0,0   >",  @
+"<     >", "<     >"], ["", "", "", ""] )
+$# Load/BC set "Fixed_Root" created.
+
+loadsbcs_create2( "Gravity", "Inertial Load", "Element Uniform", "3D",  @
+"Static", [""], "Geometry", "Coord 0", "1.", ["<0,0,-9.81     >", "<     >",  @
+"<     >"], ["", "", ""] )
+$# Application Region List is "blank".
+$# Load/BC set "Gravity" created.
+$# ===================== Aeroelastic Time =========================
+
+uil_pref_analysis.set_analysis_preference( "MSC.Nastran", "Aeroelasticity",  @
+".bdf", ".op2", "No Mapping" )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "138", "Curve 1", "Curve 2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 138
+sgm_const_surface_2curve( "139", "Curve 3", "Curve 4",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 139
+
+
+flat_plate_surf_create( "FlatPlate", [0., 0., 0.], [0., 0., 0.], 0., 0.,   @
+101001, 1, 0, "None", 0, ["empty"], 6, 6, [0., 0.2, 0.40000001, 0.60000002,   @
+0.80000001, 1.], [0., 0.2, 0.40000001, 0.60000002, 0.80000001, 1.], FALSE,   @
+"Surface 138:139", 0, TRUE )
+$# 1 Surface Created: Surface 140
+$# Group "FlatPlate" created.
+$# Property Set "FlatPlate" created.
+$# 1 Surface Deleted: Surface 140
+flds_store_start_elem_id( 102001 )
+ 
+flds_rigid_bdy_mot_cntrl_mod( "ANGLEA", "Linear", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "SIDES", "Do Not Create", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "ROLL", "Do Not Create", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "PITCH", "Do Not Create", "AeroSG2D" )
+flds_rigid_bdy_mot_cntrl_mod( "YAW", "Do Not Create", "AeroSG2D" )
+
+fields_create_general( "SUPER_GROUP_AeroSG2D", 2, 5, 2, "Real", "Coord 0", "", @
+  0, 0, 0, 0 )
+fields_create_general_term( "SUPER_GROUP_AeroSG2D", 0, 0, 0, 128,   @
+"5.000000.*1.500000*7.500000*Coord 0*3*1.226*Full Model" )
+
+flds_spline_create( "TPSpline_1", "Thin Plate", ["General", "Rigid Attach"], "", [ @
+"default_group"], "", ["FlatPlate"] )
+fields_create_general( "STRUCT_MODEL_-1", 2, 5, 2, "Real", "Coord 0", "", 0,  @
+0, 0, 0 )
+fields_create_general_term( "STRUCT_MODEL_-1", 0, 0, 0, 250,  @
+"TRUE**FALSE*Lumped*1.*TRUE**FALSE*TRUE*20.*TRUE*1.*TRUE" )
+mscnastran_subcase.create( "144", "5_AoA", "" )
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "AERO SUBCASE METHOD NAME",   @
+"Flexible Trim" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",   @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",   @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",   @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC FORCES", "1" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC FORCES 1", "AEROF=0" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC PRESSURES", "1" )
+mscnastran_subcase.create_char_param( "AERODYNAMIC PRESSURES 1", "APRES=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "AERO BOUNDARY SYMMETRY FLAG",   @
+"Asymmetric" )
+mscnastran_subcase.create_char_param( "AERO GROUND SYMMETRY FLAG",   @
+"Asymmetric" )
+mscnastran_subcase.create_real_param( "AERO MACH NUMBER", 0.18411765 )
+mscnastran_subcase.create_real_param( "AERO DYNAMIC PRESSURE", 2402. )
+mscnastran_subcase.create_real_param( "AERO VELOCITY", 0. )
+mscnastran_subcase.create_char_param( "AERO AIC FLAG", "TRUE" )
+mscnastran_subcase.create_int_param( "AERO RB MOTION 0", 11 )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 1", "ANGLEA" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 2", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 3", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 4", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 5", " " )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 6", "URDD1" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 7", "URDD2" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 8", "URDD3" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 9", "URDD4" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 10", "URDD5" )
+mscnastran_subcase.create_char_param( "AERO RB MOTION 11", "URDD6" )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",   @
+"AERO USE ARRAY", 1, 11, [-1., -2., -2., -2., -2., -2., -2., -2., -2., -2.,   @
+-2.] )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",   @
+"AERO ARRAY OF FIXED VALUES", 1, 11, [0.0873, 0., 0., 0., 0., 0., 0., 0.,  0., @
+ 0., 0.] )
+analysis_create.step_matrix_param( "MSC.Nastran", "144__5_AoA",   @
+"AERO LINK FACTOR MATRIX", 11, 11, [[0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,   @
+0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0.,   @
+0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0.,   @
+0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0.,   @
+0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0.,   @
+0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0.,   @
+0., 0., 0., 0., 0.][0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]] )
+mscnastran_subcase.create_int_param( "AERO NUMBER OF RESTRAINED NODES", 0 )
+$# ========================= Export BDF Fragments =============================
+flds_partial_bdf_export( "Aero Groups", ["FlatPlate"], [ @
+"Aerodynamic Physical Data", "No Rigid Body Motions", "No General Controllers" @
+, "No Aero Coordinate Frames"], ["C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel\3_PartialBDF-newwing031322-51.51.50.010.010.01.txt", "Overwrite"] )
+flds_partial_bdf_export( "Splines", ["TPSpline_1"], ["Spline ID Based", ""], [ @
+"C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel\3_PartialBDF-newwing031322-51.51.50.010.010.01.txt", "Append"] )
+uil_pref_analysis.set_analysis_preference( "MSC.Nastran", "Structural", ".bdf" @
+, ".op2", "No Mapping" )
+jobfile.open( "2_MainModelDeck-newwing031322-51.51.50.010.010.01", "ANALYZE NO JOBFILE" )
+msc_delete_old_files( "2_MainModelDeck-newwing031322-51.51.50.010.010.01", ".bdf", ".op2" )
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["18-May-20" @
+, "14:06:33"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel\newwing031322-51.51.50.010.010.01\newwing031322-51.51.50.010.010.01.db" )
+jobfile.writec( "JOBNAME", "2_MainModelDeck-newwing031322-51.51.50.010.010.01" )
+
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 18-May-20 at" // @
+" 02:40:41" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Model Only" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".op2" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\msce" // @
+"xplore_files\" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\help" // @
+"files" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\alters" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\icon" // @
+"s\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin\exe" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\bin" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\flds" // @
+"_icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\mscp" // @
+"rocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\MSC.Software\Patran_x64\20190\shar" // @
+"eware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\Users\localbenabbou" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT+HDF5" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2019." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-DERIVATION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\localbenabbou" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "2_MainModelDeck-newwing031322-51.51.50.010.010.01", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "2_MainModelDeck-newwing031322-51.51.50.010.010.01" )

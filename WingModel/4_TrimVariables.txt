@@ -1,0 +1,13 @@
+$
+$ Rigid Body Motion Trim Variables:
+$
+AESTAT  1       ANGLEA
+AESTAT  2       URDD1
+AESTAT  3       URDD2
+AESTAT  4       URDD3
+AESTAT  5       URDD4
+AESTAT  6       URDD5
+AESTAT  7       URDD6
+$
+$ Trim Parameters for Subcase: 1
+$
