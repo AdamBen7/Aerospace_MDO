@@ -34,5 +34,15 @@ This project was developed using MATLAB 9.7.0.1190202 (R2019b) and MSC NASTRAN/P
 - DataVisualizer.fig - (GUI) GUI program that rapidly plots 3D surfaces and saves .png images
 - An excel spreadsheet containing NACA0012 airfoil coordinates
 
+## Steps to Run Framework
+- Know the file path for your workspace (run pwd) 
+  - Mine is: 'C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel'
+- Know the file path for Patran and Nastran executables
+  - Mine is: 'C:\\MSC.Software\\Patran_x64\\20190/template.db'
+  - And: 'C:\MSC.Software\MSC_Nastran\20190\bin\nastranw.exe'
+- Modify NasPath in WingModeler()
+- Modify filepath references in the Partial Session Files and SessionGenerator()
+- GoTo Main.m and run each section of the code in MATLAB or all at once
+- If parallel processing is not possible on your workstation, replace "parfor" with "for" in Main.m
 
-For more information, visit: <link for thesis document > 
+For more information on the theory, methodology, sample results, and analysis, visit: <link for thesis document > 
