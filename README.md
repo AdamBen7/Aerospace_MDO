@@ -1,9 +1,9 @@
 # Aerospace_MDO
-June 24, 2020
-Developed by Adam Benabbou
-Master's Thesis Project
-Aeroelasticity and Structural Dynamics Research Laboratory
-The University of Alabama
+June 24, 2020\
+Developed by Adam Benabbou\
+Master's Thesis Project\
+Aeroelasticity and Structural Dynamics Research Laboratory\
+The University of Alabama\
 
 ## To use the framework, the following software/licenses must be available:
 - MSC PATRAN with FlightLoads
