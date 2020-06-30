@@ -3,6 +3,13 @@
 % -------------------------------------------------------------------------
 
 clear; clc; close all; 
+
+fprintf('Aerospace_MDO  Copyright (C) 2020  Adam Benabbou\n')
+fprintf('This program comes with ABSOLUTELY NO WARRANTY\n')
+fprintf('This is free software, and you are welcome to redistribute it\n')
+fprintf('under certain conditions\n')
+
+
 %62.6 m/s for cessna cruise
 %83.9 m/s for cessna max
 
