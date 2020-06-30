@@ -3,7 +3,7 @@ June 24, 2020\
 Developed by Adam Benabbou\
 Master's Thesis Project\
 Aeroelasticity and Structural Dynamics Research Laboratory\
-The University of Alabama\
+The University of Alabama
 
 ## To use the framework, the following software/licenses must be available:
 - MSC PATRAN with FlightLoads
@@ -13,7 +13,7 @@ The University of Alabama\
 - MATLAB Parallel Computing Toolbox
 - Optimization Toolbox (for comparative purposes)
 
-This project was developed using MATLAB 9.7.0.1190202 (R2019b) and MSC NASTRAN/PATRAN/Flightloads x64 2019.0. 
+This project was developed using MATLAB 9.7.0.1190202 (R2019b) and MSC. NASTRAN/PATRAN/Flightloads x64 2019.0. 
 
 ## The repository includes the following functions:
 - Main() - calls all other functions
