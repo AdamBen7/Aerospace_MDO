@@ -37,9 +37,11 @@ This project was developed using MATLAB 9.7.0.1190202 (R2019b) and MSC NASTRAN/P
 ## Steps to Run Framework
 - Know the file path for your workspace (run pwd) 
   - Mine is: 'C:\Users\localbenabbou\Box Sync\Research - MDO\WingOptFramework\WingModel'
-- Know the file path for Patran and Nastran executables
+- Know the file path for Patran's template database and Nastran executable file
   - Mine is: 'C:\\MSC.Software\\Patran_x64\\20190/template.db'
   - And: 'C:\MSC.Software\MSC_Nastran\20190\bin\nastranw.exe'
+  - For Patran.exe: My computer was setup in a such a way that I did not need to specify filepath of the executable. Easy way to test is to call Patran directly from MS-Dos (terminal) or through MATLAB's command line using the 'dos' built-in function. If you can't, you may have to specify the filepath in WingModeler()
+  
 - Modify NasPath in WingModeler()
 - Modify filepath references in the Partial Session Files and SessionGenerator()
 - GoTo Main.m and run each section of the code in MATLAB or all at once
